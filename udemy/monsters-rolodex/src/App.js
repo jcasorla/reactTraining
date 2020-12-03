@@ -60,11 +60,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CardList name="Jose">
-          {this.state.monsters.map((monster) => (
-            <h1 key={monster.id}>{monster.name}</h1>
-          ))}
-        </CardList>
+        <CardList monsters={this.state.monsters}></CardList>
 
         {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
