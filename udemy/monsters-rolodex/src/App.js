@@ -60,6 +60,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <input type="search" placeholder="search monsters"></input>
         <CardList monsters={this.state.monsters}></CardList>
 
         {/* <header className="App-header">
